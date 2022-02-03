@@ -1,0 +1,24 @@
+/* Type Attributes
+p {
+    background-color: #ffc0cb;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+*/
+/* Class Attributes */
+.odds {
+    background-color: #ffc0cb;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+.third {
+    font-size: 24px;
+}
+/* ID attributes */
+#second{
+    color:#0000ff;
+    font-size: 36px;
+}
+#fourth{
+    background-color:#adff2f;
+    font-size: 24px;
+    font-weight:bold;
+}
