@@ -2,6 +2,7 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
+/* do nothing to this, adding display:flex was bad idea*/
 body {
   margin: 0;
   background: #eee;
@@ -12,8 +13,21 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+/* (1) below are what I added */
+  display:flex;
+  justify-content:space-between;
+  padding:8px;
+
+}
+/* (2) created left and right class to group the 2 sections together */
+.left, .right{
+  display:flex;
+  flex-wrap:nowrap;
+  align-items:center;
+  gap:16px;
 }
 
+/*did nothing to these 4 classes */
 .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
@@ -21,14 +35,12 @@ body {
   width: 48px;
   height:  48px;
 }
-
 .logo {
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
 }
-
 button {
   border: none;
   border-radius: 8px;
@@ -36,13 +48,15 @@ button {
   color: white;
   padding: 8px 24px;
 }
-
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
 }
 
+/* (3) modified to space each item in the list */
 ul {
   list-style-type: none;
+  display:flex;
+  gap:16px;
 }

@@ -1,7 +1,30 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  /* my edits below */
+}
+/* created class: flowers */
+.flowers
+{
+  display:flex;
+  flex-direction:row; /* not needed */
+  align-items:center;/* not needed */
+  flex-wrap:nowrap; /* not needed*/
+  justify-content:center;
+  gap: 52px;
+  margin:32px; /* could've added this to the title class instead*/
 }
 
+/* added css for the class: text */
+.text{
+  text-align:center;
+  width:200px;
+}
+/*added each class to align each group of images and text together */
+.each {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
 img {
   width: 100px;
   height: 100px;
@@ -10,6 +33,8 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  /* my edits below: */
+  text-align:center;
 }
 
 /* do not edit this footer */

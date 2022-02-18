@@ -1,27 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/*the entirity of the page */
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /*my edits below*/
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between; /*wasn't needed */
 }
-
+/*added for the 3 sections: header, content, footer*/
+.header,.footer{
+  display:flex;
+  justify-content:space-between;
+  padding:8px; /*solution uses 16px */
+}
+.content{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  flex-wrap:wrap; /*not needed */
+  align-items:center;
+  /*solution included */
+  flex:1;
+}
+.footer{
+  background-color:#eeeeee;
+}
+/* odin project logo*/
 img {
   width: 600px;
 }
 
+/*the buttons under the Odin logo */
 button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
   background: #eee;
+  /*needed to add padding to the buttons */
+  padding: 8px 16px;
 }
 
+/*the search box*/
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* added ul */
+ul{
+  list-style-type:none;
+  display:flex;
+  flex-direction:row;
+  gap:8px;
+  margin-left:-24px;
+
+}
+/* added a */
+a{
+  text-decoration:none;
+  color:gray;
 }
